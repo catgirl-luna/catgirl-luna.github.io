@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
   <head>
-    <title>BlackBox - Noah's Website</title>
+    <title>About - Noah's Website</title>
     <link rel="stylesheet" href="style.css"/>
   </head>
   <body>
@@ -11,13 +11,13 @@
           <img src="home.png" alt="Home image"/>
         </a>
       </div>
-      <a href="BlackBox.html" target="_blank">BlackBox</a>
-      <a href="About.html" target="_blank">About</a>
-      <a href="Credits.html" target="_blank">Credits</a>
-    </div>
-    <div class="content">
-      <h1>Hi! I'm a work in progress.</h1>
-      <a href="https://odnahaon.github.io" class="links">Go home</a>
+      <a href="blackbox" target="_blank">BlackBox</a>
+      <a href="about" target="_blank">About</a>
+      <a href="credits" target="_blank">Credits</a>
+      </div>
+      <div class="content">
+        <h1>Hi! I'm a work in progress.</h1>
+        <a href="https://odnahaon.github.io" class="links">Go home</a>
     </div>
   </body>
 </html>
