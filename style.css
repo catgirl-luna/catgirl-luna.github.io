@@ -61,7 +61,7 @@ a {
 }
 
 .content {
-  margin-left: 0px;
+  margin-left: 200px;
   padding: 1px 16px;
   height: 1000px;
 }
@@ -76,7 +76,7 @@ a {
     float: left;
   }
   .content {
-    margin-left: 200px;
+    margin-left: 0;
   }
 }
 
