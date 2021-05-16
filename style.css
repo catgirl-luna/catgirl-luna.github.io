@@ -2,6 +2,7 @@ body {
   background-color: #000000;
   color: #FFFFFF;
   font-family: sans-serif;
+  margin: 0;
 }
 
 .homeimage {
@@ -34,55 +35,92 @@ a {
   font-family: 'Noto Serif', serif;
 }
 
-.sidebar {
-  margin: 0;
-  padding: 0;
-  width: 200px;
+.navbar {
+  overflow: hidden;
   background-color: #f1f1f1;
-  position: fixed;
-  height: 100%;
-  overflow: auto;
+  left: 0;
+  width: 100%;
 }
 
-.sidebar a:not(.homeimagelink) {
+.navbar a:not(.homeimagelink) {
   display: block;
+  float: left;
   background-color: #CCC;
   color: #000;
-  padding: 16px;
-  padding: 10px 20px;
-  padding-left: 10px;
-  padding-right: 10px;
-  border: 3px solid #eee;
+  text-align: center;
+  padding: 14px 16px;
+  border: 3px solid #EEE;
 }
 
-.sidebar a:hover:not(.homeimagelink) {
+.subnav {
+  float: left;
+  overflow: hidden;
+}
+
+.subnav .subnavbtn {
+  color: #000;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+  border: none;
+  outline: none;
+}
+
+.navbar a:hover:not(.homeimagelink), .subnav:hover .subnavbtn {
   background-color: #555;
   color: white;
 }
 
+.subnav-content {
+  display: none;
+  position: absolute;
+  background-color: #CCC;
+  z-index: 1;
+  left: 0;
+  width: 100%;
+  padding: 5px 5px 5px 5px;
+}
+
+.subnav-content a {
+  float: left;
+  color: #000;
+  border: 3px solid #CCC;
+}
+
+.subnav-content a:hover {
+  background-color: #CCC;
+  color: black;
+}
+
+.subnav:hover .subnav-content {
+  display: block;
+}
+
 .content {
-  margin-left: 200px;
   padding: 1px 16px;
   height: 1000px;
 }
 
-@media screen and (max-width: 700px) {
-  .sidebar {
-    width: 100%;
-    height: auto;
-    position: relative;
-  }
-  .sidebar a {
-    float: left;
-  }
-  .content {
-    margin-left: 0;
-  }
+#totopbtn {
+  display: none;
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  border-radius: 25px;
+  background-color: #CCC;
+  color: #000;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  margin: 0;
+  z-index: 2;
 }
 
-@media screen and (max-width: 400px) {
-  .sidebar a {
-    text-align: center;
-    float: none;
-  }
+#totopbtn:hover {
+    background-color: #555;
+    color: white;
 }
