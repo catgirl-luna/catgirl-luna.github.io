@@ -38,12 +38,9 @@ a {
 .navbar {
   overflow: hidden;
   background-color: #f1f1f1;
-  left: 0;
-  width: 100%;
 }
 
 .navbar a:not(.homeimagelink) {
-  display: block;
   float: left;
   background-color: #CCC;
   color: #000;
@@ -59,6 +56,8 @@ a {
 
 .subnav .subnavbtn {
   color: #000;
+  border: none;
+  outline: none;
   padding: 14px 16px;
   background-color: inherit;
   font-family: inherit;
@@ -76,10 +75,11 @@ a {
   display: none;
   position: absolute;
   background-color: #CCC;
-  z-index: 1;
   left: 0;
   width: 100%;
   padding: 5px 5px 5px 5px;
+  margin-top: 50px;
+  border: 3px solid #555;
 }
 
 .subnav-content a {
